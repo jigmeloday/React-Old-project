@@ -2,6 +2,8 @@ import React from 'react'
 import './sign-in.style.scss'
 import FormInput from '../../../component/form-input/form-input.component'
 import CusButton from "../../cus-button/cus-button.component";
+import {signInWithGoogle} from "../../../firebase/firebase.util";
+
 class SignIn extends React.Component{
     constructor(props) {
         super(props);
@@ -33,10 +35,13 @@ class SignIn extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <FormInput name='email' value={this.state.email} type='email' required onChange={this.handleChange} label='Email'/>
                     <FormInput name='password' value={this.state.password} type='password' required onChange={this.handleChange} label='Password'/>
-                    <CusButton type='submit'>Sign In</CusButton>
+                   <div className='button'>
+                       <CusButton type='submit'>Sign In</CusButton>
+                       <CusButton onClick={signInWithGoogle} isGoogle>{''}Sign In With Google{''}</CusButton>
+                   </div>
                 </form>
             </div>
-        )
+        );
     }
 }
 export default SignIn;
