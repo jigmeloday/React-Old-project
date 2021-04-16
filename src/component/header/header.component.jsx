@@ -5,14 +5,14 @@ import {ReactComponent as Logo} from "../../assest/4.3 crown.svg.svg";
 
 const Header = () => (
     <div className='header'>
-        <Link className='logo-container' to='./'>
+        <Link className='logo-container' to='/'>
             <Logo className='logo'/>
         </Link>
         <div className='options'>
-            <Link className='option' to='./'>Home</Link>
-            <Link className='option' to='./shop'>Shop</Link>
-            <Link className='option' to='./contact'>Contact</Link>
-            <Link className='option' to='signUp'>Sign Up</Link>
+            <Link className='option' to='/'>Home</Link>
+            <Link className='option' to='/shops'>Shop</Link>
+            <Link className='option' to='/contact'>Contact</Link>
+            <Link className='option' to='/auth'>Sign Up</Link>
         </div>
     </div>
 );
