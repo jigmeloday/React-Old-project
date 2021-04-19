@@ -4,3 +4,10 @@ export const setCurrentUser = user => (
         payload: user,
     }
 );
+
+export const purgeUser = user => (
+    {
+        type: 'PURGE_USER',
+        payload: null
+    }
+);

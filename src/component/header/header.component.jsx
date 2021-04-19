@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 import {ReactComponent as Logo} from "../../assest/4.3 crown.svg.svg";
 import {auth} from '../../firebase/firebase.util'
 const Header = ({currentUser}) => (
-
     <div className='header'>
         <Link className='logo-container' to='/'>
             <Logo className='logo'/>
@@ -15,18 +14,20 @@ const Header = ({currentUser}) => (
             <Link className='option' to='/shops'>Shop</Link>
             <Link className='option' to='/contact'>Contact</Link>
             {
-                currentUser ?
-                    <div className='option' onClick={() => auth.signOut()}>
+                !!(currentUser) ?
+                   (<div className='option' onClick={() => auth.signOut()}>
                         Sign Out
-                    </div>
+                    </div>)
                     :
-                    <Link className='option' to='/auth'>Sign Up</Link>
+                    (<Link className='option' to='/auth'>Sign Up</Link>)
             }
+            {/*<Link>{currentUser}</Link>*/}
         </div>
+
     </div>
 );
 const mapStateToProps = state => ({
     currentUser: state.user.currentUser
 });
 
-export default connect(mapStateToProps) (Header);
+export default connect(mapStateToProps)(Header);
