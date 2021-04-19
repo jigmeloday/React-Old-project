@@ -4,6 +4,7 @@ import CusButton from '../cus-button/cus-button.component';
 import './card-dropdown.style.scss';
 import CartItem from '../cart-item/cart-item.component';
 import {selectCartItem} from "../../redux/cart/cart.selector";
+import {createStructuredSelector} from "reselect";
 
 const CardDropdown = ({cartItems}) => (
     <div className='cart-dropdown'>
@@ -16,9 +17,9 @@ const CardDropdown = ({cartItems}) => (
     </div>
 );
 
-const mapStateToProps = (state) => (
+const mapStateToProps = createStructuredSelector (
     {
-        cartItems: selectCartItem(state)
+        cartItems: selectCartItem
     }
 );
 
