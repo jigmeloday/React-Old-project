@@ -5,7 +5,7 @@ export const setCurrentUser = user => (
     }
 );
 
-export const purgeUser = user => (
+export const purgeUser = () => (
     {
         type: 'PURGE_USER',
         payload: null

@@ -21,7 +21,6 @@ const Header = ({currentUser}) => (
                     :
                     (<Link className='option' to='/auth'>Sign Up</Link>)
             }
-            {/*<Link>{currentUser}</Link>*/}
         </div>
 
     </div>
