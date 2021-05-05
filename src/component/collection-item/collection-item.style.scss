@@ -13,18 +13,18 @@
     background-position: center;
     margin-bottom: 5px;
   }
-  .custom-button{
+  .custom-button {
     width: 80%;
     opacity: 0.7;
     position: absolute;
     top: 255px;
     display: none;
   }
-  &:hover{
-    .image{
+  &:hover {
+    .image {
       opacity: 0.8;
     }
-    .custom-button{
+    .custom-button {
       display: flex;
       opacity: 0.8;
     }
