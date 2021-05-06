@@ -2,6 +2,7 @@ import React from "react";
 import CollectionOverView from "../../component/collection-overview/collection-overview.component";
 import { Route } from "react-router-dom";
 import CollectionPage from "../collection/collection.component";
+
 const ShopPage = ({ match }) => {
   console.log({ path: match.path });
   return (
