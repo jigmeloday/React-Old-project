@@ -2,6 +2,7 @@ import React from "react";
 import "./checkout.style.scss";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
+import StripeCheckoutButton from "../../component/stripe-button/stripe-button.component";
 import {
   selectCartItem,
   selectCartTotal,
@@ -32,6 +33,7 @@ const Checkout = ({ cartItems, total, toggleCartHidden }) => (
     <div className="total">
       <span>Total: ${total}</span>
     </div>
+    <StripeCheckoutButton className="button" price={total} />
   </div>
 );
 const mapStateToProps = createStructuredSelector({
