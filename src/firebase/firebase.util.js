@@ -3,13 +3,13 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyAHM3NCy64GudT5qKC8MozQGj6gcUCj8tQ",
-  authDomain: "learningreact-4d40d.firebaseapp.com",
-  projectId: "learningreact-4d40d",
-  storageBucket: "learningreact-4d40d.appspot.com",
-  messagingSenderId: "1064853304118",
-  appId: "1:1064853304118:web:223ee6ed1a8d90982e3997",
-  measurementId: "G-4TGN0F2SJS",
+  apiKey: "AIzaSyAeCoYlOzgtUxwtKaftDjGtgNBF4McXF7g",
+  authDomain: "e-shop-6cf7e.firebaseapp.com",
+  projectId: "e-shop-6cf7e",
+  storageBucket: "e-shop-6cf7e.appspot.com",
+  messagingSenderId: "812232753119",
+  appId: "1:812232753119:web:2d61d0338c462758c08e6a",
+  measurementId: "G-XKD0HGCNTM",
 };
 
 export const createUserProfileDoc = async (userAuth, additoinalData) => {
