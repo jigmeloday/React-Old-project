@@ -6,12 +6,15 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import ShopPage from "./page/shopPage/shop.component";
 import Header from "./component/header/header.component";
 import Auth from "./page/auth/auth.component";
-import { auth, createUserProfileDoc } from "./firebase/firebase.util";
+import {
+  auth,
+  createUserProfileDoc,
+  addCollectionAndDocuments,
+} from "./firebase/firebase.util";
 import { connect } from "react-redux";
 import { purgeUser, setCurrentUser } from "./redux/user/user.action";
 import { selectCurrentUser } from "./redux/user/user.selector";
 import { createStructuredSelector } from "reselect";
-
 class App extends React.Component {
   unsubscribeFromAuth = null;
   componentDidMount() {
