@@ -22,5 +22,5 @@ export const selectCollectionFetching = createSelector(
 );
 export const selectCollectionsIsLoading = createSelector(
   [selectShop],
-  (shop) => shop.collections
+  (shop) => !!shop.collections
 );
