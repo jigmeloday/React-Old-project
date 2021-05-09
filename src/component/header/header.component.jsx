@@ -20,6 +20,7 @@ const Header = ({ currentUser, hidden }) => (
     </LogoCointainer>
     <OptionCotainer>
       <OptionLink to="/">Home</OptionLink>
+      {!!currentUser ? <OptionLink to="/profile">Profile</OptionLink> : <></>}
       <OptionLink to="/shops">Shop</OptionLink>
       <OptionLink to="/contact">Contact</OptionLink>
       {!!currentUser ? (
