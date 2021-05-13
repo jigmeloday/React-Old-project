@@ -1,5 +1,4 @@
 import React from "react";
-import "./checkout-item.style.scss";
 import { connect } from "react-redux";
 import {
   clearItemFromCart,
