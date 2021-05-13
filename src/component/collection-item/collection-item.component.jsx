@@ -1,5 +1,4 @@
 import React from "react";
-import CusButton from "../cus-button/cus-button.component";
 import { connect } from "react-redux";
 import { addItems } from "../../redux/cart/cart.action";
 import {

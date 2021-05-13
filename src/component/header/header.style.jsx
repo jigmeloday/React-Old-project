@@ -24,15 +24,26 @@ export const LogoCointainer = styled(Link)`
     padding: 0;
   }
 `;
-export const OptionCotainer = styled.div`
+export const Accordion = styled.div`
   width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  border: none;
+  display: flex;
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
+`;
+export const MenuIcon = styled.div`
+  display: none;
+`;
+export const OptionCotainer = styled.div`
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  @media screen and (max-width: 800px) {
-    width: 90%;
-  }
 `;
 
 export const OptionLink = styled(Link)`
